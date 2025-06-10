@@ -1,5 +1,4 @@
 import Head from "next/head";
-import Image from 'next/image';
 import Link from "next/link";
 import styles from "@/styles/products.module.css";
 import { Suspense, useMemo } from "react";
@@ -74,17 +73,17 @@ export default function ProductsPage({ categories, products }: Props) {
                                     className={styles.product_card}
                                 >
                                     <div className={styles.card_image}>
-                                        <Suspense
-                                            fallback={<div className={styles.image_loader} />}
-                                        >
-                                            {/* <Image
+                                        {/* <Suspense */}
+                                            {/* fallback={<div className={styles.image_loader} />} */}
+                                        {/* > */}
+                                            <img
                                                 src={product.thumbnail}
                                                 alt={product.title}
                                                 width={200}
                                                 height={200}
                                                 className={styles.thumbnail}
-                                            /> */}
-                                        </Suspense>
+                                            />
+                                        {/* </Suspense> */}
                                     </div>
                                     <div className={styles.card_text}>
                                         <div className={styles.card_head}>
