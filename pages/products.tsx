@@ -77,13 +77,13 @@ export default function ProductsPage({ categories, products }: Props) {
                                         <Suspense
                                             fallback={<div className={styles.image_loader} />}
                                         >
-                                            <Image
+                                            {/* <Image
                                                 src={product.thumbnail}
                                                 alt={product.title}
                                                 width={200}
                                                 height={200}
                                                 className={styles.thumbnail}
-                                            />
+                                            /> */}
                                         </Suspense>
                                     </div>
                                     <div className={styles.card_text}>
